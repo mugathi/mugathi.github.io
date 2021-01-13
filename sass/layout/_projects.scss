@@ -1,0 +1,43 @@
+.projects{
+    margin-top: 10rem;
+}
+
+.projects-list{
+    margin-top:8rem;
+}
+
+.projects-card{
+    border-radius: 2px;
+    padding:2rem;
+    text-align: center;
+    width: 80%;
+    box-shadow: 0 1rem 1rem .5rem rgba(black,0.15);
+    color:$color-black;
+    margin:4rem auto;
+    &-name{
+        font-size: 4rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        color: $color-primary;
+    }
+    &-content{
+        font-family: "Lato",Arial,sans-serif;
+        font-size: 2rem;
+        padding: 2rem;
+        text-align: left;
+        &::before{
+            content: open-quote;
+        }
+        &::after{
+            content: close-quote;
+        }
+    }
+    &-tech{
+        font-size: 2rem;
+        text-align: left;
+        padding: 0 2rem;
+        & span{
+            color: $color-primary;
+        }
+    }
+}

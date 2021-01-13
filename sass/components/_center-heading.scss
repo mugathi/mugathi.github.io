@@ -1,0 +1,29 @@
+.heading-center{
+    &-name{
+        color: $color_white;
+        font-family: 'Open Sans', Arial, sans-serif;
+        text-transform: unset;
+        font-weight: bolder; 
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+    &-name::after{
+        content: "";
+        border: 2px solid white;
+        width: 5rem;
+        display: block;
+        margin:0 auto;
+        margin-top: 1rem;
+    }
+}
+
+
+.heading-primary{
+    & .heading-center-name{
+        color:$color-black;
+        &::after{
+            border:2px solid $color-primary;
+        }
+    }
+}

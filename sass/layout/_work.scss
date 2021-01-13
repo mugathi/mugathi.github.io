@@ -1,0 +1,15 @@
+.work{
+    .card{
+        color:$color-black;
+        margin:2rem auto;
+        &-icon{
+            color:$color-primary;
+        }
+        &-name{
+            color:$color-black;
+        } 
+        & span{
+            color: $color-primary;
+        }       
+    }
+}

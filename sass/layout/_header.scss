@@ -1,0 +1,48 @@
+.header{
+    height: 85vh;
+    background-image: linear-gradient(to right bottom,
+    rgba(248, 245, 245, 0.4),
+    rgba(56, 54, 54, 0.4)),
+    url(../img/nature.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+
+    @supports(clip-path: polygon(0 0,100% 0,100% 75vh,0 100%)) or (-webkit-clip-path: polygon(0 0,100% 0,100% 75vh,0 100%)){
+        clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
+        -webkit-clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
+        height: 95vh;
+    }
+}
+
+.heading{
+    color:$color_white;
+    font-size: 3rem;
+    text-align: center;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    &-name{
+        padding-bottom:4rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+         position: relative;
+        font-family: 'Open Sans',Arial,sans-serif; 
+        &::after{
+            margin-top: 1rem;
+            content: "";
+            position: absolute;
+            display: block;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            border:2px solid $color-primary;
+            width: 8rem;
+        } 
+    }
+    &-tag{
+        font-style: italic;
+    }
+}
