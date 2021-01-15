@@ -1,3 +1,7 @@
+@import 'utilities/functions';
+@import 'utilities/mixins';
+@import 'utilities/grid';
+@import 'utilities/flex';
 @import 'variables/variables';
 
 @import 'layout/header';
@@ -5,11 +9,6 @@
 @import 'layout/work';
 @import 'layout/projects';
 @import 'layout/contact';
-
-@import 'utilities/functions';
-@import 'utilities/mixins';
-@import 'utilities/grid';
-@import 'utilities/flex';
 
 @import 'components/cards';
 @import 'components/center-heading';

@@ -21,8 +21,9 @@
         color: $color-primary;
     }
     &-content{
-        font-family: "Lato",Arial,sans-serif;
-        font-size: 2rem;
+        font-family: Arial,sans-serif;
+        font-size: 2.3rem;
+        line-height: 3rem;
         padding: 2rem;
         text-align: left;
         &::before{
@@ -33,7 +34,8 @@
         }
     }
     &-tech{
-        font-size: 2rem;
+        font-family: 'Open Sans',Arial,sans-serif;
+        font-size: 2.2rem;
         text-align: left;
         padding: 0 2rem;
         & span{

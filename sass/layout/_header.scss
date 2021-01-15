@@ -3,7 +3,7 @@
     background-image: linear-gradient(to right bottom,
     rgba(248, 245, 245, 0.4),
     rgba(56, 54, 54, 0.4)),
-    url(../img/nature.jpg);
+    url(../img/nature-m.jpg);
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
@@ -14,6 +14,14 @@
         clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
         -webkit-clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
         height: 95vh;
+    }
+
+    @media (min-resolution:192dpi) and (min-width:37.5em),
+           (min-width:125em){
+        background-image: linear-gradient(to right bottom,
+        rgba(248, 245, 245, 0.4),
+        rgba(56, 54, 54, 0.4)),
+        url(../img/nature-l.jpg);
     }
 }
 
